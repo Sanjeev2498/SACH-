@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for dark mode -->
+    <style name="Theme.SachVault" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Dark theme colors (inherits from day theme, can customize here) -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>

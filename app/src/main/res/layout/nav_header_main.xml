@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/color_primary"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingTop="24dp"
+    android:paddingRight="24dp"
+    android:paddingBottom="24dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <!-- App Icon -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle_background_white"
+        android:contentDescription="App Icon"
+        android:padding="12dp"
+        android:src="@drawable/ic_account_balance_wallet_24" />
+
+    <!-- App Name -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="SachVault"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+        android:textColor="@color/color_on_primary"
+        android:textStyle="bold" />
+
+    <!-- App Tagline -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Finance Manager"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textColor="@color/color_on_primary"
+        android:alpha="0.8" />
+
+</LinearLayout>

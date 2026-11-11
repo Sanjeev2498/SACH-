@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Responsive Dimensions - Default (Phone) -->
+    
+    <!-- Padding and Margins -->
+    <dimen name="responsive_padding">16dp</dimen>
+    <dimen name="section_margin">16dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="summary_section_padding">12dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_clearance">80dp</dimen>
+    <dimen name="empty_state_padding">32dp</dimen>
+    
+    <!-- Header -->
+    <dimen name="header_button_size">48dp</dimen>
+    <dimen name="header_title_size">20sp</dimen>
+    <dimen name="logo_size">32dp</dimen>
+    
+    <!-- Text Sizes -->
+    <dimen name="month_text_size">16sp</dimen>
+    <dimen name="label_text_size">12sp</dimen>
+    <dimen name="amount_text_size">28sp</dimen>
+    <dimen name="empty_state_text_size">16sp</dimen>
+    
+    <!-- Card Properties -->
+    <dimen name="card_corner_radius">16dp</dimen>
+    
+    <!-- Empty State -->
+    <dimen name="empty_state_icon_size">96dp</dimen>
+    <dimen name="empty_state_icon_radius">48dp</dimen>
+    <dimen name="empty_state_inner_icon_size">48dp</dimen>
+    <dimen name="empty_state_icon_margin">24dp</dimen>
+    <dimen name="empty_state_text_margin">32dp</dimen>
+    <dimen name="empty_state_text_max_width">300dp</dimen>
+    
+    <!-- FAB -->
+    <string name="fab_size">normal</string>
+    
+</resources>

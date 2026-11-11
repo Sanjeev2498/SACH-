@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Calculator Button Styles -->
+    <style name="Widget.SachVault.Calculator.Button" parent="Widget.Material3.Button.TextButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:background">@color/color_surface</item>
+        <item name="android:textColor">@color/color_on_surface</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@color/color_surface</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="rippleColor">@color/color_surface_container_highest</item>
+    </style>
+
+    <style name="Widget.SachVault.Calculator.Button.Operator" parent="Widget.SachVault.Calculator.Button">
+        <item name="android:background">@color/color_surface_container</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="backgroundTint">@color/color_surface_container</item>
+    </style>
+
+    <style name="Widget.SachVault.Calculator.Button.Equals" parent="Widget.SachVault.Calculator.Button.Operator">
+        <item name="android:layout_height">128dp</item>
+        <item name="android:background">@color/color_primary</item>
+        <item name="backgroundTint">@color/color_primary</item>
+        <item name="android:textColor">@color/color_on_primary</item>
+    </style>
+
+    <!-- Progress Bar Styles -->
+    <style name="BudgetProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressTint">@color/color_expense</item>
+        <item name="android:progressBackgroundTint">@color/color_surface_variant</item>
+        <item name="android:indeterminateTint">@color/color_primary</item>
+    </style>
+
+    <!-- Budget Over Progress Bar -->
+    <style name="BudgetOverProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressTint">@color/color_negative</item>
+        <item name="android:progressBackgroundTint">@color/color_surface_variant</item>
+        <item name="android:indeterminateTint">@color/color_primary</item>
+    </style>
+
+</resources>

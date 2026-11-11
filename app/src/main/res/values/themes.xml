@@ -1,0 +1,192 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.SachVault" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorOnSecondary">@color/color_on_primary</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+        
+        <!-- Surface variant colors -->
+        <item name="colorSurfaceVariant">@color/color_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/color_on_surface_variant</item>
+        
+        <!-- Outline colors -->
+        <item name="colorOutline">@color/color_outline</item>
+        <item name="colorOutlineVariant">@color/color_outline_variant</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:navigationBarColor">@color/navigation_bar_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        
+        <!-- Force dark theme -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <!-- Activity theme for Add Transaction (full screen) -->
+    <style name="Theme.SachVault.AddTransaction" parent="Theme.SachVault">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Toolbar style -->
+    <style name="Widget.SachVault.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/color_surface</item>
+        <item name="titleTextColor">@color/color_on_surface</item>
+        <item name="subtitleTextColor">@color/color_on_surface_variant</item>
+    </style>
+
+    <!-- FAB style -->
+    <style name="Widget.SachVault.FloatingActionButton" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">@color/color_primary</item>
+        <item name="tint">@color/color_on_primary</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <!-- Card style -->
+    <style name="Widget.SachVault.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/color_surface</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Button styles -->
+    <style name="Widget.SachVault.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/color_primary</item>
+        <item name="android:textColor">@color/color_on_primary</item>
+    </style>
+
+    <style name="Widget.SachVault.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/color_primary</item>
+        <item name="android:textColor">@color/color_primary</item>
+    </style>
+
+    <!-- Text Input styles -->
+    <style name="Widget.SachVault.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/color_primary</item>
+        <item name="hintTextColor">@color/color_on_surface_variant</item>
+        <item name="android:textColorHint">@color/color_on_surface_variant</item>
+    </style>
+
+    <!-- Bottom Navigation style -->
+    <style name="Widget.SachVault.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/color_surface_container_high</item>
+        <item name="itemIconTint">@color/bottom_nav_color</item>
+        <item name="itemTextColor">@color/bottom_nav_color</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.SachVault.BottomNavigationView.ActiveIndicator</item>
+    </style>
+
+    <style name="Widget.SachVault.BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/color_primary</item>
+    </style>
+
+    <!-- Typography styles -->
+    <style name="TextAppearance.SachVault.Headline.Large" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textColor">@color/color_on_surface</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.SachVault.Headline.Medium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/color_on_surface</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.SachVault.Body.Large" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/color_on_surface</item>
+    </style>
+
+    <style name="TextAppearance.SachVault.Body.Medium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/color_on_surface_variant</item>
+    </style>
+
+    <style name="TextAppearance.SachVault.Label" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textColor">@color/color_on_surface_variant</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Amount display styles -->
+    <style name="TextAppearance.SachVault.Amount.Large" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="android:textColor">@color/color_on_surface</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <style name="TextAppearance.SachVault.Amount.Income" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/color_income</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.SachVault.Amount.Expense" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/color_expense</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Calculator Button Styles -->
+    <style name="CalculatorButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:background">@drawable/bg_calculator_button</item>
+        <item name="android:textColor">@color/color_on_surface</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="CalculatorButton.Operator" parent="CalculatorButton">
+        <item name="android:background">@drawable/bg_calculator_button_operator</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalculatorButton.Equals" parent="CalculatorButton.Operator">
+        <item name="android:layout_height">114dp</item>
+        <item name="android:background">@drawable/bg_calculator_button_equals</item>
+        <item name="android:textColor">@color/color_on_primary</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Custom DatePicker Theme -->
+    <style name="CustomDatePickerTheme" parent="Theme.Material3.DayNight.Dialog">
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorSurface">@color/color_surface_container</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="android:textColorPrimary">@color/color_on_surface</item>
+        <item name="android:textColorSecondary">@color/color_on_surface_variant</item>
+        
+        <!-- Primary colors for selected date -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorAccent">@color/color_primary</item>
+        
+        <!-- Button colors -->
+        <item name="android:buttonBarButtonStyle">@style/CustomDatePickerButton</item>
+        
+        <!-- Dialog background -->
+        <item name="android:windowBackground">@color/color_surface_container</item>
+    </style>
+
+    <style name="CustomDatePickerButton" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

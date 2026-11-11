@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        
+        <!-- Main Navigation Items -->
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard_24"
+            android:title="Dashboard" />
+        
+        <item
+            android:id="@+id/nav_records_menu"
+            android:icon="@drawable/ic_receipt_24"
+            android:title="Records" />
+            
+        <item
+            android:id="@+id/nav_analysis_menu"
+            android:icon="@drawable/ic_analytics_24"
+            android:title="Analysis" />
+            
+        <item
+            android:id="@+id/nav_budgets_menu"
+            android:icon="@drawable/ic_account_balance_24"
+            android:title="Budgets" />
+            
+        <item
+            android:id="@+id/nav_accounts_menu"
+            android:icon="@drawable/ic_account_balance_wallet_24"
+            android:title="Accounts" />
+            
+        <item
+            android:id="@+id/nav_categories_menu"
+            android:icon="@drawable/ic_category_24"
+            android:title="Categories" />
+    
+    </group>
+
+    <!-- Divider -->
+    <item android:title="">
+        <menu>
+            
+            <!-- Tools Section -->
+            <group android:id="@+id/group_tools">
+                
+                <item
+                    android:id="@+id/nav_export"
+                    android:icon="@drawable/ic_file_download_24"
+                    android:title="Export Data" />
+                    
+                <item
+                    android:id="@+id/nav_import"
+                    android:icon="@drawable/ic_file_upload_24"
+                    android:title="Import Data" />
+                    
+                <item
+                    android:id="@+id/nav_backup"
+                    android:icon="@drawable/ic_backup_24"
+                    android:title="Backup" />
+                    
+            </group>
+            
+            <!-- Settings Section -->
+            <group android:id="@+id/group_settings">
+                
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_settings_24"
+                    android:title="Settings" />
+                    
+                <item
+                    android:id="@+id/nav_help"
+                    android:icon="@drawable/ic_help_24"
+                    android:title="Help and Support" />
+                    
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_info_24"
+                    android:title="About" />
+                    
+            </group>
+            
+        </menu>
+    </item>
+
+</menu>

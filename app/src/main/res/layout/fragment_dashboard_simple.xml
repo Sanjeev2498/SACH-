@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <!-- Fixed Header Section (Won't Scroll) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:background="@color/color_background">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp">
+
+            <ImageButton
+                android:id="@+id/btn_menu"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Menu"
+                android:padding="12dp"
+                android:src="@drawable/ic_menu_24"
+                android:tint="@color/color_primary" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_account_balance_wallet_24"
+                    android:tint="@color/color_primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SachVault"
+                    android:textColor="@color/color_on_surface"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_add_transaction"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Add Transaction"
+                android:padding="12dp"
+                android:src="@drawable/ic_add_24"
+                android:tint="@color/color_primary" />
+
+        </LinearLayout>
+
+        <!-- Month Navigation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_previous_month"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Previous month"
+                android:src="@drawable/ic_chevron_left_24"
+                android:tint="@color/color_on_surface_variant" />
+
+            <TextView
+                android:id="@+id/tv_current_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="SEPTEMBER 2026"
+                android:textColor="@color/color_on_surface"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:fontFamily="monospace" />
+
+            <ImageButton
+                android:id="@+id/btn_next_month"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Next month"
+                android:src="@drawable/ic_chevron_right_24"
+                android:tint="@color/color_on_surface_variant" />
+
+        </LinearLayout>
+
+        <!-- Summary Card (Horizontal Layout) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/color_surface_container"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:weightSum="3">
+
+            <!-- Expense Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expense"
+                    android:textColor="@color/color_on_surface_variant"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05" />
+
+                <TextView
+                    android:id="@+id/tv_total_expense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="0.00"
+                    android:textColor="@color/color_expense"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <!-- Vertical Divider -->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_outline_variant"
+                android:layout_marginHorizontal="8dp" />
+
+            <!-- Income Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Income"
+                    android:textColor="@color/color_on_surface_variant"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05" />
+
+                <TextView
+                    android:id="@+id/tv_total_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="0.00"
+                    android:textColor="@color/color_tertiary"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <!-- Vertical Divider -->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_outline_variant"
+                android:layout_marginHorizontal="8dp" />
+
+            <!-- Total Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textColor="@color/color_on_surface_variant"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05" />
+
+                <TextView
+                    android:id="@+id/tv_total_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="0.00"
+                    android:textColor="@color/color_on_surface"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Scrollable Content Area (Only This Scrolls) -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Transactions RecyclerView - This will scroll -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_transactions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="100dp"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+
+        <!-- Empty State - Centered in available space -->
+        <LinearLayout
+            android:id="@+id/layout_empty_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="24dp">
+
+            <!-- Empty State Icon (Using LinearLayout instead of CardView) -->
+            <LinearLayout
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/color_surface_container_high"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:alpha="0.5"
+                    android:src="@drawable/ic_receipt_long_24"
+                    android:tint="@color/color_on_surface_variant" />
+
+            </LinearLayout>
+
+            <!-- Empty State Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.4"
+                android:text="No record in this month. Tap the + icon in the header to add new expense or income."
+                android:textColor="@color/color_on_surface_variant"
+                android:textSize="16sp"
+                android:maxWidth="300dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

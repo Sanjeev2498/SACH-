@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary App Colors -->
+    <color name="color_primary">#4edea3</color>        <!-- Tertiary green -->
+    <color name="color_primary_container">#1c3d2f</color> <!-- Dark green container -->
+    <color name="color_primary_variant">#009365</color> <!-- Darker green -->
+    <color name="color_secondary">#bcc7de</color>       <!-- Light blue-gray -->
+
+    <!-- Background Colors -->
+    <color name="color_background">#051424</color>      <!-- Dark blue background -->
+    <color name="color_surface">#122131</color>         <!-- Card/surface background -->
+    <color name="color_surface_variant">#1c2b3c</color> <!-- Elevated surfaces -->
+    <color name="color_surface_container">#122131</color>
+    <color name="color_surface_container_high">#1c2b3c</color>
+    <color name="color_surface_container_highest">#273647</color>
+    <color name="color_surface_bright">#2c3a4c</color>
+    <color name="color_tertiary">#4edea3</color>
+    <color name="color_on_tertiary">#002113</color>
+
+    <!-- Text Colors -->
+    <color name="color_on_surface">#d4e4fa</color>      <!-- Primary text (light) -->
+    <color name="color_on_surface_variant">#c6c6cd</color> <!-- Secondary text -->
+    <color name="color_on_primary">#002113</color>      <!-- Text on green elements -->
+    <color name="color_on_background">#d4e4fa</color>
+
+    <!-- Semantic Colors - Enhanced -->
+    <color name="color_income">#4CAF50</color>          <!-- Bright green for income -->
+    <color name="color_expense">#F44336</color>         <!-- Bright red for expenses -->
+    <color name="color_neutral">#bcc7de</color>         <!-- Neutral amounts -->
+    <color name="color_positive">#4CAF50</color>        <!-- Positive values -->
+    <color name="color_negative">#F44336</color>        <!-- Negative values -->
+
+    <!-- Category Colors -->
+    <color name="category_beauty">#E91E63</color>       <!-- Pink for beauty -->
+    <color name="category_bills">#455A64</color>        <!-- Dark gray for bills -->
+    <color name="category_donation">#4CAF50</color>     <!-- Green for donation -->
+    <color name="category_education">#3F51B5</color>    <!-- Blue for education -->
+    <color name="category_entertainment">#9C27B0</color> <!-- Purple for entertainment -->
+    <color name="category_awards">#2196F3</color>       <!-- Light blue for awards -->
+    <color name="category_bonus">#FF9800</color>        <!-- Orange for bonus -->
+    <color name="category_dividends">#00BCD4</color>    <!-- Cyan for dividends -->
+    <color name="category_freelance">#FF9800</color>    <!-- Orange for freelance -->
+    <color name="category_interest">#8BC34A</color>     <!-- Light green for interest -->
+    <color name="category_salary">#E91E63</color>       <!-- Pink for salary -->
+
+    <!-- Account Type Colors -->
+    <color name="account_bank">#FF9800</color>          <!-- Orange for bank -->
+    <color name="account_card">#F44336</color>          <!-- Red for cards -->
+    <color name="account_cash">#4CAF50</color>          <!-- Green for cash -->
+    <color name="account_savings">#E91E63</color>       <!-- Pink for savings -->
+    <color name="account_upi">#2196F3</color>           <!-- Blue for UPI -->
+
+    <!-- Border and Dividers -->
+    <color name="color_outline">#45464d</color>         <!-- Borders -->
+    <color name="color_outline_variant">#45464d</color>
+    <color name="color_divider">#273647</color>         <!-- Dividers -->
+
+    <!-- Material Design Colors (for compatibility) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Status Bar and Navigation Bar -->
+    <color name="status_bar_color">@color/color_background</color>
+    <color name="navigation_bar_color">@color/color_surface_container_high</color>
+
+    <!-- Transparent colors for overlays -->
+    <color name="black_overlay">#66000000</color>
+    <color name="white_overlay">#66FFFFFF</color>
+    <color name="primary_overlay">#664edea3</color>
+
+    <!-- Navigation drawer colors -->
+    <color name="nav_item_text_selected">@color/color_primary</color>
+    <color name="nav_item_text_normal">@color/color_on_surface_variant</color>
+    <color name="nav_item_icon_selected">@color/color_primary</color>
+    <color name="nav_item_icon_normal">@color/color_on_surface_variant</color>
+
+    <!-- Additional colors for categories -->
+    <color name="color_on_tertiary_container">@color/color_on_primary</color>
+
+    <!-- Aliases for compatibility -->
+    <color name="tertiary">@color/color_tertiary</color>
+    <color name="on_surface_variant">@color/color_on_surface_variant</color>
+    <color name="on_surface">@color/color_on_surface</color>
+    <color name="background">@color/color_background</color>
+    <color name="error">@color/color_negative</color>
+    <color name="surface_container_high">@color/color_surface_container_high</color>
+    <color name="outline_variant">@color/color_outline_variant</color>
+    <color name="surface_container">@color/color_surface_container</color>
+</resources>

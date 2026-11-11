@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Month Selector -->
+        <LinearLayout
+            android:id="@+id/layout_month_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/btn_previous_month"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Previous month"
+                android:src="@drawable/ic_chevron_left_24"
+                app:tint="@color/color_on_surface_variant" />
+
+            <TextView
+                android:id="@+id/tv_current_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.SachVault.Headline.Medium"
+                android:textStyle="bold"
+                tools:text="September 2026" />
+
+            <ImageButton
+                android:id="@+id/btn_next_month"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Next month"
+                android:src="@drawable/ic_chevron_right_24"
+                app:tint="@color/color_on_surface_variant" />
+
+        </LinearLayout>
+
+        <!-- Summary Cards -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.SachVault.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="24dp">
+
+                <!-- Expense -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/dashboard_expense"
+                        android:textAppearance="@style/TextAppearance.SachVault.Label"
+                        android:textColor="@color/color_on_surface_variant" />
+
+                    <TextView
+                        android:id="@+id/tv_total_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.SachVault.Amount.Expense"
+                        android:textSize="24sp"
+                        tools:text="0.00" />
+
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@color/color_outline" />
+
+                <!-- Income -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/dashboard_income"
+                        android:textAppearance="@style/TextAppearance.SachVault.Label"
+                        android:textColor="@color/color_on_surface_variant" />
+
+                    <TextView
+                        android:id="@+id/tv_total_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.SachVault.Amount.Income"
+                        android:textSize="24sp"
+                        tools:text="0.00" />
+
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@color/color_outline" />
+
+                <!-- Total -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/dashboard_total"
+                        android:textAppearance="@style/TextAppearance.SachVault.Label"
+                        android:textColor="@color/color_on_surface_variant" />
+
+                    <TextView
+                        android:id="@+id/tv_total_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.SachVault.Headline.Medium"
+                        android:textColor="@color/color_on_surface"
+                        android:textSize="24sp"
+                        tools:text="0.00" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Recent Transactions or Empty State -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp">
+
+            <!-- Recent Transactions RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_transactions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="16dp"
+                tools:listitem="@layout/item_transaction" />
+
+            <!-- Empty State -->
+            <LinearLayout
+                android:id="@+id/layout_empty_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="32dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <!-- Empty State Icon -->
+                <View
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/circle_background"
+                    android:backgroundTint="@color/color_surface_container_high" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="-72dp"
+                    android:layout_marginBottom="24dp"
+                    android:alpha="0.5"
+                    android:src="@drawable/ic_receipt_24"
+                    app:tint="@color/color_on_surface_variant" />
+
+                <!-- Empty State Text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/dashboard_empty_title"
+                    android:textAppearance="@style/TextAppearance.SachVault.Body.Large"
+                    android:textColor="@color/color_on_surface_variant" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dashboard_empty_subtitle"
+                    android:textAppearance="@style/TextAppearance.SachVault.Body.Medium" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
