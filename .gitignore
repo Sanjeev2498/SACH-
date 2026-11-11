@@ -20,13 +20,3 @@ SachVault UI/
 frontend/
 *.md
 build_log.txt
-
-# Exclude specific feature sections (to be committed later)
-app/src/main/java/com/example/sachvault/ui/accounts/
-app/src/main/java/com/example/sachvault/ui/categories/
-app/src/main/res/layout/fragment_accounts.xml
-app/src/main/res/layout/fragment_categories.xml
-app/src/main/res/layout/activity_account_form.xml
-app/src/main/res/layout/activity_category_form.xml
-app/src/main/res/layout/item_account.xml
-app/src/main/res/layout/item_category.xml
